@@ -1,4 +1,8 @@
 const router = require('express').Router();
+const {
+    getAddCategory,
+    createCategory} = require('./categories/controllers/categoryControllers')
+
 
 const categoryValidation = require('./validation/categoryValidation');
 const { addProducts } = require('./products/controllers/productControllers');
